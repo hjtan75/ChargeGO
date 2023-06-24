@@ -1,0 +1,10 @@
+localhost:8080/signup 
+{
+    "firstname":"zhang",
+    "lastname":"zhang",
+    "email":"2233@qq.com",
+    "phone":"1782728",
+    "password":"12345"
+}
+
+localhost:8080/signin

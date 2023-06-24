@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.lb02b.chargego.Utils.MyMapper"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/chargego"
+                        userId="root"
+                        password="123456Zz">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.lb02b.chargego.DataObject.AutoDO" targetProject="/src/main/java"/>
+
+        <sqlMapGenerator targetPackage="mapper.automapper" targetProject="/src/main/resources"/>
+
+        <javaClientGenerator targetPackage="com.lb02b.chargego.Dao.AutoMapper" targetProject="/src/main/java"
+                             type="XMLMAPPER"/>
+
+
+        <table tableName="charge_order"></table>
+        <table tableName="customer"></table>
+        <table tableName="move_order"></table>
+        <table tableName="order_record"></table>
+        <table tableName="payment"></table>
+        <table tableName="report"></table>
+        <table tableName="report_damage_order"></table>
+        <table tableName="operator"></table>
+        <table tableName="topup"></table>
+        <table tableName="vehicle"></table>
+        <table tableName="vehicle_type"></table>
+        <table tableName="manager"></table>
+        <table tableName="station"></table>
+
+    </context>
+</generatorConfiguration>

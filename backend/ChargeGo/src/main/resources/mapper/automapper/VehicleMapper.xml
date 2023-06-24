@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lb02b.chargego.Dao.AutoMapper.VehicleMapper">
+  <resultMap id="BaseResultMap" type="com.lb02b.chargego.DataObject.AutoDO.Vehicle">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="vehicle_type" jdbcType="INTEGER" property="vehicleType" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="remaining_battery" jdbcType="INTEGER" property="remainingBattery" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="latitude" jdbcType="DOUBLE" property="latitude" />
+    <result column="stationId" jdbcType="VARCHAR" property="stationid" />
+  </resultMap>
+</mapper>

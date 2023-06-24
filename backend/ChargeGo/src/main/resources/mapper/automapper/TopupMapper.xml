@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lb02b.chargego.Dao.AutoMapper.TopupMapper">
+  <resultMap id="BaseResultMap" type="com.lb02b.chargego.DataObject.AutoDO.Topup">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="original_balance" jdbcType="DECIMAL" property="originalBalance" />
+    <result column="current_balance" jdbcType="DECIMAL" property="currentBalance" />
+    <result column="amount" jdbcType="DECIMAL" property="amount" />
+  </resultMap>
+</mapper>
